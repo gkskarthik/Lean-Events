@@ -1,0 +1,120 @@
+<html lang="en">
+    <head>
+        <title>Inicio</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="./css/leanevento.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="business_home.html"><img src="imagenes/logo-blanco.png"/></a>
+                        <h1>LEANEVENTOS</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="business_home.html" class="onpage">Incio</a></li>
+                            <li><a href="business.html">Fundacion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class ="main">
+                <section class="listofevents">
+                    <div class="home_table">
+                        <h1>Lista de Eventos</h1>
+                        <table>
+                            <tr>
+                                <th>DETAILLES DEL EVENTOS</th>
+                                <th>LUGAR</th>
+                                <th>FECHA</th>
+                                <th>HORA</th>
+                                <th>ASISTENCIA</th>
+                            </tr>
+                            <tr>
+                                <td class="row">
+                                    <img src="imagenes/minibaner1.jpg" width="120px" height="140px">
+                                    <span>Nombre del Evento y sus detalles</span>
+                                </td>
+                                <td>Direccion del lugar</td>
+                                <td>14/01/2019</td>
+                                <td>8 AM</td>
+                                <td><button id="confirm_button1" class="confirm_button">Confirma</button></td>
+                            </tr>
+                            <tr>
+                                <td class="row">
+                                    <img src="imagenes/minibaner2.jpg" width="120px" height="140px">
+                                    <span>Nombre del Evento y sus detalles</span>
+                                </td>
+                                <td>Direccion del lugar</td>
+                                <td>14/01/2019</td>
+                                <td>8 AM</td>
+                                <td><button id="confirm_button2" class="confirm_button">Confirma</button></td>
+                            </tr>
+                            <tr>
+                                <td class="row">
+                                    <img src="imagenes/minibaner3.jpg" width="120px" height="140px">
+                                    <span>Nombre del Evento y sus detalles</span>
+                                </td>
+                                <td>Direccion del lugar</td>
+                                <td>14/01/2019</td>
+                                <td>8 AM</td>
+                                <td><button id="confirm_button3" class="confirm_button">Confirma</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <div class="footer">
+                <p>
+                    Copyright &copy;2019 All rights reserved | This web is made with &#9825; by <span>DiazApps</span>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<section id="pop_up">
+        <div class="register_content" id="notification">
+            <form>  
+            <div class="register_header">
+                <h4>Bienvenido</h4>
+            </div> 
+            <div class="register_body">
+                <h4>Gracias por ser un Voluntario en nuestros evento.</h4>
+            </div>  
+            <div class="rightside">
+                <div class="register_footer">
+                    <button class="close_button">Close</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+</section>
+
+<script>
+    var pop_up = document.getElementById('pop_up');
+    var confirm1 = document.getElementById('confirm_button1');
+    var confirm2 = document.getElementById('confirm_button2');
+    var confirm3 = document.getElementById('confirm_button3');
+    confirm1.onclick = function() {
+      pop_up.style.display = "block";
+    }
+    confirm2.onclick = function() {
+      pop_up.style.display = "block";
+    }
+    
+    confirm3.onclick = function() {
+      pop_up.style.display = "block";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == pop_up) {
+        pop_up.style.display = "none";
+      }
+    }
+</script>
